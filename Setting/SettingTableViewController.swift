@@ -19,7 +19,9 @@ class SettingTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        title = "설정"
+        
     }
     
     //섹션 갯수
