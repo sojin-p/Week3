@@ -16,6 +16,7 @@
 		2335B94F2A720FF000743596 /* TodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2335B94E2A720FF000743596 /* TodoTableViewController.swift */; };
 		2335B9512A7232D600743596 /* StudyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2335B9502A7232D600743596 /* StudyTableViewController.swift */; };
 		2335B9532A72496900743596 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2335B9522A72496900743596 /* Extension.swift */; };
+		2335B9552A72635000743596 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2335B9542A72635000743596 /* Setting.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		2335B94E2A720FF000743596 /* TodoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewController.swift; sourceTree = "<group>"; };
 		2335B9502A7232D600743596 /* StudyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTableViewController.swift; sourceTree = "<group>"; };
 		2335B9522A72496900743596 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		2335B9542A72635000743596 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Setting.storyboard; path = Setting/Setting.storyboard; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		2335B92E2A71FFF300743596 = {
 			isa = PBXGroup;
 			children = (
+				2335B9562A72635700743596 /* Setting */,
 				2335B9392A71FFF300743596 /* Week3 */,
 				2335B9382A71FFF300743596 /* Products */,
 			);
@@ -74,6 +77,14 @@
 				2335B9482A71FFF500743596 /* Info.plist */,
 			);
 			path = Week3;
+			sourceTree = "<group>";
+		};
+		2335B9562A72635700743596 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				2335B9542A72635000743596 /* Setting.storyboard */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 				2335B9472A71FFF500743596 /* LaunchScreen.storyboard in Resources */,
 				2335B9442A71FFF500743596 /* Assets.xcassets in Resources */,
 				2335B9422A71FFF300743596 /* Main.storyboard in Resources */,
+				2335B9552A72635000743596 /* Setting.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
