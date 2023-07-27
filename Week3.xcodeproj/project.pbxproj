@@ -13,6 +13,9 @@
 		2335B9422A71FFF300743596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2335B9402A71FFF300743596 /* Main.storyboard */; };
 		2335B9442A71FFF500743596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2335B9432A71FFF500743596 /* Assets.xcassets */; };
 		2335B9472A71FFF500743596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2335B9452A71FFF500743596 /* LaunchScreen.storyboard */; };
+		2335B94F2A720FF000743596 /* TodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2335B94E2A720FF000743596 /* TodoTableViewController.swift */; };
+		2335B9512A7232D600743596 /* StudyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2335B9502A7232D600743596 /* StudyTableViewController.swift */; };
+		2335B9532A72496900743596 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2335B9522A72496900743596 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		2335B9432A71FFF500743596 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2335B9462A71FFF500743596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2335B9482A71FFF500743596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2335B94E2A720FF000743596 /* TodoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewController.swift; sourceTree = "<group>"; };
+		2335B9502A7232D600743596 /* StudyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTableViewController.swift; sourceTree = "<group>"; };
+		2335B9522A72496900743596 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				2335B93C2A71FFF300743596 /* SceneDelegate.swift */,
 				2335B93E2A71FFF300743596 /* ViewController.swift */,
 				2335B9402A71FFF300743596 /* Main.storyboard */,
+				2335B9522A72496900743596 /* Extension.swift */,
+				2335B9502A7232D600743596 /* StudyTableViewController.swift */,
+				2335B94E2A720FF000743596 /* TodoTableViewController.swift */,
 				2335B9432A71FFF500743596 /* Assets.xcassets */,
 				2335B9452A71FFF500743596 /* LaunchScreen.storyboard */,
 				2335B9482A71FFF500743596 /* Info.plist */,
@@ -139,6 +148,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2335B93F2A71FFF300743596 /* ViewController.swift in Sources */,
+				2335B94F2A720FF000743596 /* TodoTableViewController.swift in Sources */,
+				2335B9512A7232D600743596 /* StudyTableViewController.swift in Sources */,
+				2335B9532A72496900743596 /* Extension.swift in Sources */,
 				2335B93B2A71FFF300743596 /* AppDelegate.swift in Sources */,
 				2335B93D2A71FFF300743596 /* SceneDelegate.swift in Sources */,
 			);
