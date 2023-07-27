@@ -8,7 +8,15 @@
 import UIKit
 
 class SettingTableViewController: UITableViewController {
-
+    
+    let settingCellList = [
+        ["공지사항", "실험실", "버전 정보"],
+        ["개인/보안", "알림", "채팅", "멀티프로필"],
+        ["고객센터/도움말"]
+    ]
+    
+    let sectionTitleList = ["전체 설정", "개인 설정", "기타"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,12 +24,17 @@ class SettingTableViewController: UITableViewController {
     
     //섹션 갯수
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return sectionTitleList.count
+    }
+    
+    //섹션 타이틀
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "\(sectionTitleList[section])"
     }
     
     //cell 갯수
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return settingCellList[section].count
     }
     
     //디자인 및 데이터
