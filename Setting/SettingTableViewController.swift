@@ -43,9 +43,10 @@ class SettingTableViewController: UITableViewController {
         
         let section = indexPath.section
         let row = indexPath.row
-        
         cell.textLabel?.text = "\(settingCellList[section][row])"
 //        cell.textLabel?.text = "\(settingCellList[indexPath.section][indexPath.row])"
+        
+        cell.textLabel?.font = UIFont.systemFont(ofSize: 12)
         
         return cell
     }
