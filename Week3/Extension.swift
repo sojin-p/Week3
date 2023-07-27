@@ -11,9 +11,9 @@ import UIKit
 //디자인, 얼럿, 백그라운드 등등을 많이 묶는다!
 extension UITableViewController { //확장하고 싶은 컨트롤러에 추가로 쓸수있다는 의미
     
-    func showAlert() {
-        let alert = UIAlertController(title: "오류", message: "상세메세지", preferredStyle: .alert)
-        let ok = UIAlertAction(title: "확인", style: .default)
+    func showAlert(title: String) {
+        let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
+        let ok = UIAlertAction(title: "확인", style: .cancel)
         alert.addAction(ok)
         present(alert, animated: true)
     }

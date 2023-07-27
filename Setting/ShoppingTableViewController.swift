@@ -19,16 +19,17 @@ class ShoppingTableViewController: UITableViewController {
 
     }
     
-    @IBAction func addButtonClicked(_ sender: UIButton) {
+    @IBAction func enterAndAddButtonTapped(_ sender: Any) {
         //텍스트 필드 글자가 셀에 반영
         guard let text = inputTextField.text, text.count > 0 else {
-            showAlert()
+            showAlert(title: "내용을 입력해 주세요.")
             return
         }
         
         shoppingTodoList.append(text)
-        
+        inputTextField.text = ""
         tableView.reloadData()
+        
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
