@@ -17,6 +17,7 @@
 		2335B9512A7232D600743596 /* StudyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2335B9502A7232D600743596 /* StudyTableViewController.swift */; };
 		2335B9532A72496900743596 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2335B9522A72496900743596 /* Extension.swift */; };
 		2335B9552A72635000743596 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2335B9542A72635000743596 /* Setting.storyboard */; };
+		2335B9582A726B6C00743596 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2335B9572A726B6C00743596 /* SettingTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		2335B9502A7232D600743596 /* StudyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTableViewController.swift; sourceTree = "<group>"; };
 		2335B9522A72496900743596 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		2335B9542A72635000743596 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Setting.storyboard; path = Setting/Setting.storyboard; sourceTree = SOURCE_ROOT; };
+		2335B9572A726B6C00743596 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				2335B9542A72635000743596 /* Setting.storyboard */,
+				2335B9572A726B6C00743596 /* SettingTableViewController.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2335B9582A726B6C00743596 /* SettingTableViewController.swift in Sources */,
 				2335B93F2A71FFF300743596 /* ViewController.swift in Sources */,
 				2335B94F2A720FF000743596 /* TodoTableViewController.swift in Sources */,
 				2335B9512A7232D600743596 /* StudyTableViewController.swift in Sources */,
