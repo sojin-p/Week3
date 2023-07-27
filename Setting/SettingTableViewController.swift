@@ -41,7 +41,11 @@ class SettingTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "settingCell")!
         
-        cell.textLabel?.text = "되나"
+        let section = indexPath.section
+        let row = indexPath.row
+        
+        cell.textLabel?.text = "\(settingCellList[section][row])"
+//        cell.textLabel?.text = "\(settingCellList[indexPath.section][indexPath.row])"
         
         return cell
     }
