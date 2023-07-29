@@ -16,12 +16,12 @@ class MovieTableViewCell: UITableViewCell {
     @IBOutlet var rateLabel: UILabel!
     @IBOutlet var overviewLabel: UILabel!
     
-    func configreCell(row: Movie) {
-        titleLabel.text = row.mainTitle
-        dateLabel.text = row.releaseDate
-        runtimeLabel.text = "\(row.runtime)분"
-        rateLabel.text = "\(row.rate)점"
-        overviewLabel.text = row.overview
+    func configureCell(row: Movie) {
+        titleLabel.configureText(title: row.mainTitle, color: .black, font: .boldSystemFont(ofSize: 18))
+        dateLabel.configureText(title: row.releaseDate, color: .darkGray, font: .systemFont(ofSize: 16))
+        runtimeLabel.configureText(title: "\(row.runtime)분", color: .darkGray, font: .systemFont(ofSize: 16))
+        rateLabel.configureText(title: "\(row.rate)점", color: .darkGray, font: .systemFont(ofSize: 16))
+        overviewLabel.configureText(title: row.overview, color: .black, font: .systemFont(ofSize: 13))
         posterImageView.image = UIImage(named: row.mainTitle)
     }
     

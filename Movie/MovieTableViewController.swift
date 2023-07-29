@@ -27,7 +27,7 @@ class MovieTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieTableViewCell") as! MovieTableViewCell
         let row = movieList.movie[indexPath.row]
         
-        cell.configreCell(row: row)
+        cell.configureCell(row: row)
         
         return cell
     }

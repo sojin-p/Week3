@@ -50,8 +50,8 @@ class TodoTableViewController: UITableViewController {
         cell.backgroundColor = indexPath.row % 2 == 0 ? .lightGray : .white
         
         //(3)밑과 같은 코드
-        cell.textLabel?.text = list[indexPath.row]
-        cell.textLabel?.configureTitleText()
+//        cell.textLabel?.text = list[indexPath.row]
+        cell.textLabel?.configureText(title: list[indexPath.row], color: .blue, font: .boldSystemFont(ofSize: 20))
         
 //        //인덱스 패스 [섹션,셀(로우)]
 //        if indexPath.row == 0 {

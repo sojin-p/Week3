@@ -22,10 +22,10 @@ extension UITableViewController { //확장하고 싶은 컨트롤러에 추가�
 
 
 extension UILabel { //uilabel을 사용하는 어느 곳이든 이 함수 쓸 수 있다. - 투두테이블뷰컨에서 씀
-    func configureTitleText() {
-        self.textColor = .red
-        self.font = .boldSystemFont(ofSize: 20)
-        self.textAlignment = .center
+    func configureText(title: String, color: UIColor, font: UIFont) {
+        self.text = title
+        self.textColor = color
+        self.font = font
     }
 }
 
