@@ -5,6 +5,12 @@
 //  Created by 박소진 on 2023/07/27.
 //
 
+struct ShoppingToDo {
+    var title: String
+    var done: Bool = false
+    var bookMark: Bool = false
+}
+
 import UIKit
 
 class ShoppingTableViewController: UITableViewController {
@@ -12,7 +18,7 @@ class ShoppingTableViewController: UITableViewController {
     @IBOutlet var inputTextField: UITextField!
     @IBOutlet var addButton: UIButton!
     
-    var shoppingTodoList: [String] = []
+    var shoppingTodoList: [ShoppingToDo] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,22 +35,26 @@ class ShoppingTableViewController: UITableViewController {
             return
         }
         
-        shoppingTodoList.append(text)
+        shoppingTodoList.append(.init(title: text))
         inputTextField.text = ""
         tableView.reloadData()
         
     }
 
-    //MARK: - TableView 관련
+    //MARK: - TableViewCell
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return shoppingTodoList.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "shoppingCell")!
-        cell.textLabel?.text = shoppingTodoList[indexPath.row]
         
-        cell.tintColor = .black
+        let cell = tableView.dequeueReusableCell(withIdentifier: ShoppingTableViewCell.identifier) as! ShoppingTableViewCell
+        let row = shoppingTodoList[indexPath.row]
+        
+        cell.resultLabel.text = row.title
+        cell.checkButton.image = UIImage(systemName: "checkmark.square")
+        cell.bookMarkButton.setImage(UIImage(systemName: "star"), for: .normal)
+        cell.bookMarkButton.setTitle("", for: .normal)
         
         return cell
     }

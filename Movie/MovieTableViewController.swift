@@ -24,7 +24,7 @@ class MovieTableViewController: UITableViewController {
     
     //셀 디자인 및 데이터
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieTableViewCell") as! MovieTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: MovieTableViewCell.identifier) as! MovieTableViewCell
         let row = movieList.movie[indexPath.row]
         
         cell.configureCell(row: row)

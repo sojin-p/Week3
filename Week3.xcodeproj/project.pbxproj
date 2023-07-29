@@ -28,6 +28,7 @@
 		2335B96D2A74C20E00743596 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2335B96C2A74C20E00743596 /* MovieTableViewCell.swift */; };
 		2390715D2A74C8E500C52AFB /* MovieInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2390715C2A74C8E500C52AFB /* MovieInfo.swift */; };
 		239071612A74D00E00C52AFB /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239071602A74D00E00C52AFB /* Movie.swift */; };
+		239071632A74EF7A00C52AFB /* ShoppingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239071622A74EF7A00C52AFB /* ShoppingTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		2335B96C2A74C20E00743596 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		2390715C2A74C8E500C52AFB /* MovieInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieInfo.swift; sourceTree = "<group>"; };
 		239071602A74D00E00C52AFB /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		239071622A74EF7A00C52AFB /* ShoppingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			children = (
 				2335B9642A74B35600743596 /* Setting.storyboard */,
 				2335B9592A727ACA00743596 /* ShoppingTableViewController.swift */,
+				239071622A74EF7A00C52AFB /* ShoppingTableViewCell.swift */,
 				2335B9572A726B6C00743596 /* SettingTableViewController.swift */,
 			);
 			path = SettingShopping;
@@ -201,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				239071632A74EF7A00C52AFB /* ShoppingTableViewCell.swift in Sources */,
 				2335B9582A726B6C00743596 /* SettingTableViewController.swift in Sources */,
 				2390715D2A74C8E500C52AFB /* MovieInfo.swift in Sources */,
 				2335B95A2A727ACB00743596 /* ShoppingTableViewController.swift in Sources */,
