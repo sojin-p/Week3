@@ -24,6 +24,12 @@ class MovieTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieTableViewCell") as! MovieTableViewCell
         
+        cell.titleLabel.text = "영화제목"
+        cell.rateLabel.text = "1234.12.12."
+        cell.runtimeLabel.text = "123분"
+        cell.rateLabel.text = "1.23점"
+        cell.overviewLabel.text = "줄거리"
+        
         return cell
     }
     
