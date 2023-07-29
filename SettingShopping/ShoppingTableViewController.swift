@@ -49,22 +49,9 @@ class ShoppingTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: ShoppingTableViewCell.identifier) as! ShoppingTableViewCell
-        var row = shoppingTodoList[indexPath.row]
+        let row = shoppingTodoList[indexPath.row]
         
-        cell.resultLabel.text = row.title
-        cell.bookMarkButton.setTitle("", for: .normal)
-        
-        if row.bookMark {
-            cell.bookMarkButton.setImage(UIImage(systemName: "star.fill"), for: .normal)
-        } else {
-            cell.bookMarkButton.setImage(UIImage(systemName: "star"), for: .normal)
-        }
-        
-        if row.done {
-            cell.checkImageView.image = UIImage(systemName: "checkmark.square")
-        } else {
-            cell.checkImageView.image = UIImage(systemName: "square")
-        }
+        cell.configureCell(row: row)
         
         return cell
     }

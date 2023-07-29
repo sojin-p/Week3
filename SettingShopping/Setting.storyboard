@@ -313,6 +313,9 @@
                                                     </constraints>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                    <connections>
+                                                        <action selector="buttonClicked:" destination="Wef-FK-HvM" eventType="touchUpInside" id="PBI-kH-2K2"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </stackView>
