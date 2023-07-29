@@ -16,4 +16,13 @@ class MovieTableViewCell: UITableViewCell {
     @IBOutlet var rateLabel: UILabel!
     @IBOutlet var overviewLabel: UILabel!
     
+    func configreCell(row: Movie) {
+        titleLabel.text = row.mainTitle
+        dateLabel.text = row.releaseDate
+        runtimeLabel.text = "\(row.runtime)분"
+        rateLabel.text = "\(row.rate)점"
+        overviewLabel.text = row.overview
+        posterImageView.image = UIImage(named: row.mainTitle)
+    }
+    
 }

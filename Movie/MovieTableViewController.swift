@@ -25,13 +25,9 @@ class MovieTableViewController: UITableViewController {
     //셀 디자인 및 데이터
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieTableViewCell") as! MovieTableViewCell
-        let row = indexPath.row
+        let row = movieList.movie[indexPath.row]
         
-        cell.titleLabel.text = movieList.movie[row].mainTitle
-        cell.dateLabel.text = movieList.movie[row].releaseDate
-        cell.runtimeLabel.text = "\(movieList.movie[row].runtime)분"
-        cell.rateLabel.text = "\(movieList.movie[row].rate)점"
-        cell.overviewLabel.text = movieList.movie[row].overview
+        cell.configreCell(row: row)
         
         return cell
     }
