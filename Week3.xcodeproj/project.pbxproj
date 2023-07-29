@@ -27,6 +27,7 @@
 		2335B96B2A74C11B00743596 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2335B96A2A74C11B00743596 /* MovieTableViewController.swift */; };
 		2335B96D2A74C20E00743596 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2335B96C2A74C20E00743596 /* MovieTableViewCell.swift */; };
 		2390715D2A74C8E500C52AFB /* MovieInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2390715C2A74C8E500C52AFB /* MovieInfo.swift */; };
+		239071612A74D00E00C52AFB /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239071602A74D00E00C52AFB /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		2335B96A2A74C11B00743596 /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
 		2335B96C2A74C20E00743596 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		2390715C2A74C8E500C52AFB /* MovieInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieInfo.swift; sourceTree = "<group>"; };
+		239071602A74D00E00C52AFB /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		2335B9632A74B30800743596 /* Movie */ = {
 			isa = PBXGroup;
 			children = (
+				239071602A74D00E00C52AFB /* Movie.swift */,
 				2390715C2A74C8E500C52AFB /* MovieInfo.swift */,
 				2335B9662A74B4C500743596 /* Movie.storyboard */,
 				2335B96C2A74C20E00743596 /* MovieTableViewCell.swift */,
@@ -204,6 +207,7 @@
 				2335B96D2A74C20E00743596 /* MovieTableViewCell.swift in Sources */,
 				2335B93F2A71FFF300743596 /* ViewController.swift in Sources */,
 				2335B9602A7389C600743596 /* ToDo.swift in Sources */,
+				239071612A74D00E00C52AFB /* Movie.swift in Sources */,
 				2335B9622A738A1000743596 /* ToDoInformation.swift in Sources */,
 				2335B94F2A720FF000743596 /* TodoTableViewController.swift in Sources */,
 				2335B9512A7232D600743596 /* StudyTableViewController.swift in Sources */,
