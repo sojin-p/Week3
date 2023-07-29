@@ -31,7 +31,18 @@ class SettingTableViewController: UITableViewController {
     
     //섹션 타이틀
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "\(sectionTitleList[section])"
+//        return "\(sectionTitleList[section])"
+        
+        if section == 0 {
+            return "첫번째 섹션"
+        } else if section == 1 {
+            return "두번째 섹션"
+        } else if section == 2 {
+            return "세번째 섹션"
+        }
+        
+        return ""
+        
     }
     
     //cell 갯수
