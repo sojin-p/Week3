@@ -326,7 +326,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="bookMarkButton" destination="r5F-sW-eWq" id="hWI-9i-4xH"/>
-                                    <outlet property="checkButton" destination="i3R-VS-uWa" id="Sff-yO-NuM"/>
+                                    <outlet property="checkImageView" destination="i3R-VS-uWa" id="nFa-Zf-zKS"/>
                                     <outlet property="resultLabel" destination="xKb-AE-Lrp" id="0oY-ih-5qw"/>
                                 </connections>
                             </tableViewCell>

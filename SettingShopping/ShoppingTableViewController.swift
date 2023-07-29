@@ -49,14 +49,38 @@ class ShoppingTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: ShoppingTableViewCell.identifier) as! ShoppingTableViewCell
-        let row = shoppingTodoList[indexPath.row]
+        var row = shoppingTodoList[indexPath.row]
         
         cell.resultLabel.text = row.title
-        cell.checkButton.image = UIImage(systemName: "checkmark.square")
-        cell.bookMarkButton.setImage(UIImage(systemName: "star"), for: .normal)
         cell.bookMarkButton.setTitle("", for: .normal)
         
+        if row.bookMark {
+            cell.bookMarkButton.setImage(UIImage(systemName: "star.fill"), for: .normal)
+        } else {
+            cell.bookMarkButton.setImage(UIImage(systemName: "star"), for: .normal)
+        }
+        
+        if row.done {
+            cell.checkImageView.image = UIImage(systemName: "checkmark.square")
+        } else {
+            cell.checkImageView.image = UIImage(systemName: "square")
+        }
+        
         return cell
+    }
+    
+    //셀 선택
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        var row = shoppingTodoList[indexPath.row]
+
+        row.done = !row.done
+
+        //다시 넣어주기..
+        shoppingTodoList[indexPath.row].done = row.done
+
+        tableView.reloadRows(at: [indexPath], with: .automatic)
+        
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

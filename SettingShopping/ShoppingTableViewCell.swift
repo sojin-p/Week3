@@ -11,7 +11,7 @@ class ShoppingTableViewCell: UITableViewCell {
     
     static let identifier = "ShoppingTableViewCell"
 
-    @IBOutlet var checkButton: UIImageView!
+    @IBOutlet var checkImageView: UIImageView!
     @IBOutlet var resultLabel: UILabel!
     @IBOutlet var bookMarkButton: UIButton!
     
