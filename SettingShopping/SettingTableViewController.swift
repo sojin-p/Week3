@@ -26,7 +26,7 @@ class SettingTableViewController: UITableViewController {
     
     //섹션 갯수
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return sectionTitleList.count
+        return sectionTitleList.count //한 줄만 있으면 리턴 생략 가능하다 그치만 코드 일관성이 떨어짐
     }
     
     //섹션 타이틀
